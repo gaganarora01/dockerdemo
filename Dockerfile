@@ -1,5 +1,5 @@
 FROM openjdk:8
-ADD target/docker-demo.java docker-spring-boot.jar
+ADD target/docker-demo.jar docker-spring-boot.jar
 EXPOSE 8085
 ENTRYPOINT ["java","-jar"."docker-spring-boot.jar"]
 
