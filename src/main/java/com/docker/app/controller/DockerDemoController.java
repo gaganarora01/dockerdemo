@@ -18,7 +18,8 @@ public class DockerDemoController {
 
 	@GetMapping("/message")
 	public String getMessage() {
-		logger.debug("This is message : " + i.addAndGet(1));		
+		logger.debug("This is message : " + i.addAndGet(1));
+		System.out.println("This is message : " + i.addAndGet(1));
 		return "This is a Docker Demo App !!";
 	}
 
