@@ -16,6 +16,7 @@ public class App
     
     @GetMapping("/")
     public String hello() {
+    	System.out.println("Got into health message");
       return "hello world! - Docker Demo";
     }
 }
